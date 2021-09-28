@@ -10,12 +10,12 @@ pipeline {
 			}
 		}
 		
-		stage('Building sidekick stage') {
+		stage('Building dev stage') {
 			when {
-				branch 'sidekick'
+				branch 'dev'
 			}
 			steps {
-				echo "Building sidekick"
+				echo "Building dev"
 			}
 		}
 	}
